@@ -1,6 +1,6 @@
 @import XCTest;
 #import "Note.h"
-#import "NSArray+HypFinder.h"
+#import "NSArray+HYPFind.h"
 
 @interface Tests : XCTestCase
 

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		143D043C1AB09BF5009C38FF /* NSArray+HypFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D043B1AB09BF5009C38FF /* NSArray+HypFinder.m */; };
+		143D043F1AB09C7D009C38FF /* NSArray+HYPFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D043E1AB09C7D009C38FF /* NSArray+HYPFind.m */; };
 		14C4182E1A01919C00636FD6 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C4182D1A01919C00636FD6 /* Tests.m */; };
 		B542D3491AB08BE8008B043B /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = B542D3481AB08BE8008B043B /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		143D043A1AB09BF5009C38FF /* NSArray+HypFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HypFinder.h"; sourceTree = "<group>"; };
-		143D043B1AB09BF5009C38FF /* NSArray+HypFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HypFinder.m"; sourceTree = "<group>"; };
+		143D043D1AB09C7D009C38FF /* NSArray+HYPFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYPFind.h"; sourceTree = "<group>"; };
+		143D043E1AB09C7D009C38FF /* NSArray+HYPFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYPFind.m"; sourceTree = "<group>"; };
 		14B564721A06D87B00342CDA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		14C418261A01919C00636FD6 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C4182C1A01919C00636FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		14C418371A01974300636FD6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				143D043A1AB09BF5009C38FF /* NSArray+HypFinder.h */,
-				143D043B1AB09BF5009C38FF /* NSArray+HypFinder.m */,
+				143D043D1AB09C7D009C38FF /* NSArray+HYPFind.h */,
+				143D043E1AB09C7D009C38FF /* NSArray+HYPFind.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -162,9 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143D043F1AB09C7D009C38FF /* NSArray+HYPFind.m in Sources */,
 				14C4182E1A01919C00636FD6 /* Tests.m in Sources */,
 				B542D3491AB08BE8008B043B /* Note.m in Sources */,
-				143D043C1AB09BF5009C38FF /* NSArray+HypFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
