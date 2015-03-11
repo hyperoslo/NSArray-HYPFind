@@ -1,12 +1,9 @@
 Pod::Spec.new do |s|
 s.name             = "NSArray-HYPFind"
 s.version          = "0.1"
-s.summary          = "A short description of NSArray-HYPFind."
+s.summary          = "NSArray-HYPFind provide hepers for NSArray"
 s.description      = <<-DESC
-An optional longer description of NSArray-HYPFind
-
-* Markdown format.
-* Don't worry about the indent, we strip it!
+Don't write the same code twice
 DESC
 s.homepage         = "https://github.com/hyperoslo/NSArray-HYPFind"
 s.license          = 'MIT'
