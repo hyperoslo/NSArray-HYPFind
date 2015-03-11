@@ -7,9 +7,9 @@
     return [self findObjectWithID:remoteID attribute:@"remoteID"];
 }
 
-- (id)findObjectWithID:(NSInteger)objectId attribute:(NSString *)attribute
+- (id)findObjectWithID:(NSInteger)objectID attribute:(NSString *)attribute
 {
-    return [[self filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %d", attribute, objectId]] firstObject];
+    return [[self filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %d", attribute, objectID]] firstObject];
 }
 
 @end
