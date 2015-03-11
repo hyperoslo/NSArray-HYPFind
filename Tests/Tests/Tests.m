@@ -10,10 +10,17 @@
 
 @implementation Tests
 
-- (void)testFindObjectWithRemoteID
+- (void)testObjectWhereRemoteID
 {
     NSArray *array = [self notes];
     Note *note = [array objectWhereRemoteID:@2];
+    XCTAssertEqual(note.remoteID, @2);
+}
+
+- (void)testObjectWhereAttribute
+{
+    NSArray *array = [self notes];
+    Note *note = [array objectWhereAttribute:@"remoteID" isEqualTo:@2];
     XCTAssertEqual(note.remoteID, @2);
 }
 
@@ -26,7 +33,6 @@
     for (int i = 0; i < 10; ++i) {
         Note *note = [Note new];
         note.remoteID = @(i);
-        note.note = [NSString stringWithFormat:@"None %d", i];
         [notes addObject:note];
     }
 
