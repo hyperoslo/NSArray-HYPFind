@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name             = "NSArray-HYPFind"
 s.version          = "0.1"
-s.summary          = "NSArray-HYPFind provide hepers for NSArray"
+s.summary          = "Easy find methods for NSArray"
 s.homepage         = "https://github.com/hyperoslo/NSArray-HYPFind"
 s.license          = 'MIT'
 s.author           = { "Hyper AS" => "teknologi@hyper.no" }
