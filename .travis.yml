@@ -1,11 +1,6 @@
 language: objective-c
 before_install:
   - gem install cocoapods
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-
 script:
-#  - set -o pipefail
-#  - xcodebuild test -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator | xcpretty -cs
-#  - xcodebuild test -project Tests/Tests.xcodeproj -scheme Tests -sdk iphonesimulator | xcpretty -cs
   - xctool -project Tests/Tests.xcodeproj -scheme Tests -sdk iphonesimulator test
-# - xctool -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator test
+# - xctool -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator build test
