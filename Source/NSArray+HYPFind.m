@@ -1,6 +1,6 @@
-#import "NSArray+HypFinder.h"
+#import "NSArray+HYPFind.h"
 
-@implementation NSArray (HypFinder)
+@implementation NSArray (HYPFind)
 
 - (id)findObjectWithRemoteID:(NSInteger)remoteID
 {
