@@ -5,6 +5,6 @@ before_install:
 
 script:
   - set -o pipefail
-#  - xcodebuild test -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator | xcpretty -cs
-  - xcodebuild test -project Tests/Tests.xcodeproj -scheme Tests -sdk iphonesimulator | xcpretty -cs
+  - xcodebuild test -workspace Tests/Tests.xcworkspace -scheme Tests -sdk iphonesimulator | xcpretty -cs
+#  - xcodebuild test -project Tests/Tests.xcodeproj -scheme Tests -sdk iphonesimulator | xcpretty -cs
 
