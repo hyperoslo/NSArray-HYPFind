@@ -7,7 +7,10 @@
 
 ## Usage
 
-`<API>`
+```objc
+- (id)findObjectWithRemoteID:(NSInteger)remoteID;
+- (id)findObjectWithID:(NSInteger)objectId attribute:(NSString *)attribute;
+```
 
 ## Installation
 
