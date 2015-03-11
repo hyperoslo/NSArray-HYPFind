@@ -3,6 +3,6 @@
 @interface NSArray (HYPFind)
 
 - (id)findObjectWithRemoteID:(NSInteger)remoteID;
-- (id)findObjectWithID:(NSInteger)objectId attribute:(NSString *)attribute;
+- (id)findObjectWithID:(NSInteger)objectID attribute:(NSString *)attribute;
 
 @end
