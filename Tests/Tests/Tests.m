@@ -13,8 +13,8 @@
 - (void)testFindObjectWithRemoteID
 {
     NSArray *array = [self notes];
-    Note *note = [array findObjectWithRemoteID:2];
-    XCTAssertEqual(note.remoteID, @(2));
+    Note *note = [array objectWhereRemoteID:@2];
+    XCTAssertEqual(note.remoteID, @2);
 }
 
 #pragma mark - Helpers

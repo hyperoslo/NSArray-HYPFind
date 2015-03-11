@@ -2,7 +2,8 @@
 
 @interface NSArray (HYPFind)
 
-- (id)findObjectWithRemoteID:(NSInteger)remoteID;
-- (id)findObjectWithID:(NSInteger)objectID attribute:(NSString *)attribute;
+- (id)objectWhereRemoteID:(NSNumber *)remoteID;
+
+- (id)objectWhereAttribute:(NSString *)attribute isEqualTo:(id)comparedAttribute;
 
 @end

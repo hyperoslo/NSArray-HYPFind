@@ -2,14 +2,14 @@
 
 @implementation NSArray (HYPFind)
 
-- (id)findObjectWithRemoteID:(NSInteger)remoteID
+- (id)objectWhereRemoteID:(NSNumber *)remoteID
 {
-    return [self findObjectWithID:remoteID attribute:@"remoteID"];
+    return [self objectWhereAttribute:@"remoteID" isEqualTo:remoteID];
 }
 
-- (id)findObjectWithID:(NSInteger)objectID attribute:(NSString *)attribute
+- (id)objectWhereAttribute:(NSString *)attribute isEqualTo:(id)comparedAttribute;
 {
-    return [[self filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %d", attribute, objectID]] firstObject];
+    return [[self filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %@", attribute, comparedAttribute]] firstObject];
 }
 
 @end
