@@ -1,4 +1,6 @@
 @import XCTest;
+#import "Note.h"
+#import "NSArray+HypFinder.h"
 
 @interface Tests : XCTestCase
 
@@ -20,10 +22,25 @@
     [super tearDown];
 }
 
-- (void)testSampleTest
+- (void)testFindObjectWithRemoteID
 {
-    NSArray *array;
-    XCTAssertNil(array);
+    NSArray *array = [self makeNotes];
+    Note *note = [array findObjectWithRemoteID:2];
+    XCTAssertEqual(note.remoteID, @(2));
+}
+
+#pragma mark - Helpers
+
+- (NSArray *)makeNotes
+{
+    NSMutableArray *notes = [NSMutableArray new];
+    for (int i = 0; i < 10; ++i) {
+        Note *note = [Note new];
+        note.remoteID = @(i);
+        note.note = [NSString stringWithFormat:@"None %d", i];
+        [notes addObject:note];
+    }
+    return notes;
 }
 
 @end
