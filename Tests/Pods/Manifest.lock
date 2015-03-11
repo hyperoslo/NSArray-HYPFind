@@ -1,0 +1,14 @@
+PODS:
+  - NSArray-HYPFind (0.1)
+
+DEPENDENCIES:
+  - NSArray-HYPFind (from `../`)
+
+EXTERNAL SOURCES:
+  NSArray-HYPFind:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NSArray-HYPFind: cc98d85f3e3bf04cd7339408139401b8624ef403
+
+COCOAPODS: 0.36.0
