@@ -1,9 +1,9 @@
-# <PODNAME>
+# <NSArray-HYPFind>
 
-[![CI Status](http://img.shields.io/travis/hyperoslo/<PODNAME>.svg?style=flat)](https://travis-ci.org/hyperoslo/<PODNAME>)
-[![Version](https://img.shields.io/cocoapods/v/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
-[![License](https://img.shields.io/cocoapods/l/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
-[![Platform](https://img.shields.io/cocoapods/p/<PODNAME>.svg?style=flat)](http://cocoadocs.org/docsets/<PODNAME>)
+[![CI Status](http://img.shields.io/travis/hyperoslo/<NSArray-HYPFind>.svg?style=flat)](https://travis-ci.org/hyperoslo/<NSArray-HYPFind>)
+[![Version](https://img.shields.io/cocoapods/v/<NSArray-HYPFind>.svg?style=flat)](http://cocoadocs.org/docsets/<NSArray-HYPFind>)
+[![License](https://img.shields.io/cocoapods/l/<NSArray-HYPFind>.svg?style=flat)](http://cocoadocs.org/docsets/<NSArray-HYPFind>)
+[![Platform](https://img.shields.io/cocoapods/p/<NSArray-HYPFind>.svg?style=flat)](http://cocoadocs.org/docsets/<NSArray-HYPFind>)
 
 ## Usage
 
@@ -11,10 +11,10 @@
 
 ## Installation
 
-**<PODNAME>** is available through [CocoaPods](http://cocoapods.org). To install
+**<NSArray-HYPFind>** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-`pod '<PODNAME>'`
+`pod '<NSArray-HYPFind>'`
 
 ## Author
 
@@ -22,4 +22,4 @@ Hyper Interaktiv AS, teknologi@hyper.no
 
 ## License
 
-**<PODNAME>** is available under the MIT license. See the LICENSE file for more info.
+**<NSArray-HYPFind>** is available under the MIT license. See the LICENSE file for more info.
