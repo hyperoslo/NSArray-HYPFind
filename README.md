@@ -8,8 +8,9 @@
 ## Usage
 
 ```objc
-- (id)findObjectWithRemoteID:(NSInteger)remoteID;
-- (id)findObjectWithID:(NSInteger)objectId attribute:(NSString *)attribute;
+- (id)objectWhereRemoteID:(NSNumber *)remoteID;
+
+- (id)objectWhereAttribute:(NSString *)attribute isEqualTo:(id)comparedAttribute;
 ```
 
 ## Installation
