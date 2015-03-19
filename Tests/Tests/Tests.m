@@ -1,5 +1,7 @@
 @import XCTest;
+
 #import "Note.h"
+
 #import "NSArray+HYPFind.h"
 
 @interface Tests : XCTestCase
@@ -8,38 +10,32 @@
 
 @implementation Tests
 
-- (void)setUp
+- (void)testObjectWhereRemoteID
 {
-    [super setUp];
-
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    NSArray *array = [self notes];
+    Note *note = [array objectWhereRemoteID:@2];
+    XCTAssertEqual(note.remoteID, @2);
 }
 
-- (void)tearDown
+- (void)testObjectWhereAttribute
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-
-    [super tearDown];
-}
-
-- (void)testFindObjectWithRemoteID
-{
-    NSArray *array = [self makeNotes];
-    Note *note = [array findObjectWithRemoteID:2];
-    XCTAssertEqual(note.remoteID, @(2));
+    NSArray *array = [self notes];
+    Note *note = [array objectWhereAttribute:@"remoteID" isEqualTo:@2];
+    XCTAssertEqual(note.remoteID, @2);
 }
 
 #pragma mark - Helpers
 
-- (NSArray *)makeNotes
+- (NSArray *)notes
 {
     NSMutableArray *notes = [NSMutableArray new];
+
     for (int i = 0; i < 10; ++i) {
         Note *note = [Note new];
         note.remoteID = @(i);
-        note.note = [NSString stringWithFormat:@"None %d", i];
         [notes addObject:note];
     }
+
     return notes;
 }
 

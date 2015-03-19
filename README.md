@@ -7,7 +7,11 @@
 
 ## Usage
 
-`<API>`
+```objc
+- (id)objectWhereRemoteID:(NSNumber *)remoteID;
+
+- (id)objectWhereAttribute:(NSString *)attribute isEqualTo:(id)comparedAttribute;
+```
 
 ## Installation
 
