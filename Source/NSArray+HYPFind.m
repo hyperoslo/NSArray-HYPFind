@@ -2,7 +2,7 @@
 
 @implementation NSArray (HYPFind)
 
-- (id)objectWhereRemoteID:(NSNumber *)remoteID
+- (id)objectWhereRemoteID:(id)remoteID
 {
     return [self objectWhereAttribute:@"remoteID" isEqualTo:remoteID];
 }
