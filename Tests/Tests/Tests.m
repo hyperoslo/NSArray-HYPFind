@@ -23,10 +23,10 @@
 }
 
 - (void)testisNullAtIndex {
-    NSArray *ar = @[@1, [NSNull null], @3];
-    XCTAssertFalse([ar isNullAtIndex:0]);
-    XCTAssertTrue([ar isNullAtIndex:1]);
-    XCTAssertFalse([ar isNullAtIndex:2]);
+    NSArray *array = @[@1, [NSNull null], @3];
+    XCTAssertFalse([array isNullAtIndex:0]);
+    XCTAssertTrue([array isNullAtIndex:1]);
+    XCTAssertFalse([array isNullAtIndex:2]);
 }
 
 #pragma mark - Helpers
