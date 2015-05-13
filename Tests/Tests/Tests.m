@@ -31,8 +31,7 @@
 
 #pragma mark - Helpers
 
-- (NSArray *)notes
-{
+- (NSArray *)notes {
     NSMutableArray *notes = [NSMutableArray new];
 
     for (int i = 0; i < 10; ++i) {
