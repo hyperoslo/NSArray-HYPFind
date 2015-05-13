@@ -12,4 +12,8 @@
     return [[self filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"%K == %@", attribute, comparedAttribute]] firstObject];
 }
 
+- (BOOL)isNullAtIndex:(NSInteger)index {
+    return [self[index] isMemberOfClass:[NSNull class]];
+}
+
 @end

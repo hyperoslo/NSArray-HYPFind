@@ -10,18 +10,23 @@
 
 @implementation Tests
 
-- (void)testObjectWhereRemoteID
-{
+- (void)testObjectWhereRemoteID {
     NSArray *array = [self notes];
     Note *note = [array objectWhereRemoteID:@2];
     XCTAssertEqual(note.remoteID, @2);
 }
 
-- (void)testObjectWhereAttribute
-{
+- (void)testObjectWhereAttribute {
     NSArray *array = [self notes];
     Note *note = [array objectWhereAttribute:@"remoteID" isEqualTo:@2];
     XCTAssertEqual(note.remoteID, @2);
+}
+
+- (void)testisNullAtIndex {
+    NSArray *ar = @[@1, [NSNull null], @3];
+    XCTAssertFalse([ar isNullAtIndex:0]);
+    XCTAssertTrue([ar isNullAtIndex:1]);
+    XCTAssertFalse([ar isNullAtIndex:2]);
 }
 
 #pragma mark - Helpers
