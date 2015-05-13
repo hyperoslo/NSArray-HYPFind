@@ -11,4 +11,5 @@
 
 - (id)objectWhereAttribute:(NSString *)attribute isEqualTo:(id)comparedAttribute;
 
+- (BOOL)isNullAtIndex:(NSInteger)index;
 @end
